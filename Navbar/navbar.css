@@ -1,0 +1,155 @@
+/*****************************************Navbar*****************************************/
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.scrolled {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-brand:hover {
+    transition: all 150ms linear 0s;
+    color: var(--main-color);
+    -webkit-transition: all 150ms linear 0s;
+    -moz-transition: all 150ms linear 0s;
+    -ms-transition: all 150ms linear 0s;
+    -o-transition: all 150ms linear 0s;
+}
+
+.navbar-toggler {
+    color: var(--white-color);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--main-color);
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-family: var(--baloo-font);
+    font-size: 16px;
+}
+
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link:hover {
+    transition: all 150ms linear 0s;
+    color: var(--main-color)!important;
+    -webkit-transition: all 150ms linear 0s;
+    -moz-transition: all 150ms linear 0s;
+    -ms-transition: all 150ms linear 0s;
+    -o-transition: all 150ms linear 0s;
+}
+
+.navbar-dark .show>.nav-link {
+    color: var(--main-color);
+}
+
+
+/*****************************************End Navbar*****************************************/
+
+
+/***************************************** Room *****************************************/
+
+.hotel-room {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.room-header p {
+    width: 75%;
+    margin: 15px auto;
+}
+
+.room-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.room-item {
+    background: linear-gradient(45deg, #21ba45 0%, #ffffff 100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.room-img img {
+    display: block;
+    max-width: none;
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 60px) !important;
+    -moz-transition: opacity 0.5s, transform 0.5s;
+    -ms-transition: opacity 0.5s, transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+    transition: all ease-in-out 0.5s;
+    -moz-transform: translate3d(-40px, 0, 0);
+    -ms-transform: translate3d(-40px, 0, 0);
+    -o-transform: translate3d(-40px, 0, 0);
+}
+
+.hotel-details {
+    width: 100%;
+    padding: 18px 25px 25px;
+    cursor: pointer;
+    background-color: var(--back-color);
+}
+
+.room-title {
+    position: relative;
+}
+
+.deal-rating {
+    position: absolute;
+    right: 0%;
+    top: 5px;
+}
+
+.room-icon {
+    font-size: 30px;
+    color: var(--main-color);
+    padding: 5px;
+    font-weight: normal;
+}
+
+.room-btn.btn {
+    margin: 10px;
+}
+
+.room-item:hover .room-img img {
+    opacity: 0.6;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/***************************************** Room *****************************************/

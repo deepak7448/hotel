@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2|Inconsolata|Merriweather|PT+Sans|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --main-color: #21ba45;
+    --white-color: #fff;
+    --back-color: #f2f2f2;
+    --dark-color: #23272b;
+    --black-color: #000;
+    --invalid-color: #dc3545;
+    --merri-font: 'Merriweather', serif;
+    --ubuntu-font: 'Ubuntu', sans-serif;
+    --pt-font: 'PT Sans', sans-serif;
+    --Inconsolata-font: 'Inconsolata', monospace;
+    --baloo-font: 'Baloo 2', cursive;
+    --Pacifico: 'Pacifico', cursive;
+}
+
+p {
+    font-family: var(--baloo-font);
+}
+
+h2 {
+    font-family: var(--ubuntu-font);
+}
+
+h3 {
+    font-family: var(--ubuntu-font);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.btn-success:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-dark:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin: auto;
+}
+
+
+/***************************************** Banner *****************************************/
+
+.banner_area {
+    background: url(../image/architecture-city.jpg) no-repeat scroll center center;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    width: 100%;
+    padding-top: 260px;
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0rem;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.banner_area::after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.banner_inner_content {
+    position: absolute;
+    z-index: 1;
+    bottom: -15px;
+}
+
+.banner_inner_content h3 {
+    font-size: 30px;
+    font-family: var(--baloo-font);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.breadcrumb a:hover {
+    color: var(--main-color);
+}
+
+.breadcrumb li {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .39px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+/***************************************** Banner *****************************************/
+
+
+/***************************************** contact *****************************************/
+
+.contact-section {
+    position: relative;
+}
+
+.contact-info {
+    position: relative;
+    padding: 40px 40px;
+    cursor: pointer;
+    background-color: var(--dark-color);
+}
+
+.contact-info-2 {
+    background-color: var(--back-color);
+}
+
+.contact-info-2 .info-item p {
+    color: var(--dark-color);
+}
+
+.info-icon {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 40px;
+}
+
+.info-icon .fa,
+.info-icon .fas {
+    color: var(--main-color);
+}
+
+.info-item {
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+
+.info-item p {
+    color: var(--back-color);
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.contact-header {
+    padding: 30px;
+    background-color: var(--back-color);
+}
+
+.contact-heading h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-heading p {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.contact-us h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.contact-map {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form:focus {
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid var(--main-color);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.contact-form {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+textarea.textarea {
+    height: 15vh;
+}
+
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:invalid:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button,
+.button .far {
+    padding-left: 5px;
+}
+
+
+/***************************************** End contact *****************************************/
+
+
+/***************************************** footer*****************************************/
+
+.footer-info {
+    background-color: var(--black-color);
+}
+
+.footer-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.footer-item h4 {
+    color: var(--white-color);
+}
+
+.footer-item h4::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background: #6abe45;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 35px;
+}
+
+.company li,
+.link li,
+.contact li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-item li i {
+    position: absolute;
+    left: 0px;
+    margin: 5px;
+}
+
+.company,
+.link,
+.contact {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.company li a,
+.link li a,
+.contact li {
+    color: var(--white-color);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.company li a:hover,
+.link li a:hover,
+.contact li:hover {
+    color: var(--main-color);
+}
+
+.contact li {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.contact .fas,
+.company .fa,
+.link .fa {
+    color: var(--main-color);
+}
+
+.contact .fas {
+    font-size: 17px;
+}
+
+.social-links .fab {
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.social-links .facebook {
+    background: #4267B2;
+}
+
+.social-links .instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-links .google-plus {
+    background: #db4a39
+}
+
+.social-links .linkedin {
+    background: #2867b2;
+}
+
+.social-links a {
+    display: inline-block;
+    border-radius: 5%;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    padding: 5px;
+    margin: 5px!important;
+    font-size: 22px;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+
+/***************************************** End footer*****************************************/
+
+#scrollUp {
+    bottom: 15px;
+    right: 15px;
+    height: 35px;
+    width: 35px;
+    background-image: url(../image/top-arrow.svg);
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: hand;
+    background-color: var(--main-color);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+#scrollUp:hover {
+    background-color: #1fa023;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 991px) {
+    .contact-map {
+        height: 525px;
+    }
+}
