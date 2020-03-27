@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="pg-calendar/dist/css/pignose.calendar.css">
-    <link rel="stylesheet" href="pg-calendar/dist/css/pignose.calendar.min.css">
+    <link rel="stylesheet" href="js/air-datepicker/css/datepicker.css">
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="js/carousel/css/owl.carousel.css">
     <link rel="stylesheet" href="animate/Animate.css">
@@ -550,10 +549,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
     <script src="bootstrap-4/js/bootstrap.min.js "></script>
+    <script src="js/air-datepicker/js/datepicker.js"></script>
+    <script src="js/air-datepicker/js/i18n/datepicker.en.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "></script>
-    <script src="js/pg-calendar/dist/js/pignose.calendar.full.min.js "></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/carousel/js/owl.carousel.js"></script>
     <script>
@@ -575,11 +575,25 @@
                 animateIn: 'slideInUp',
             })
 
-            $('.from').pignoseCalendar({
-                theme: 'dark',
+            $('#from').datepicker({
+                language: 'en',
+                dateFormat: 'dd - M - yyyy',
+                minDate: new Date(),
+                today: 'Today',
+                clear: 'Clear',
+                todayButton: new Date(),
+                clearButton: true,
+                autoClose: true,
             });
-            $('.to').pignoseCalendar({
-                theme: 'dark'
+            $('#to').datepicker({
+                language: 'en',
+                dateFormat: 'dd - M - yyyy',
+                minDate: new Date(),
+                today: 'Today',
+                clear: 'Clear',
+                todayButton: new Date(),
+                clearButton: true,
+                autoClose: true,
             });
 
             $('.count').counterUp({
