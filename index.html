@@ -74,35 +74,36 @@
                 <div class="col-lg-10  offset-lg-1 ">
                     <form class="table-item">
                         <div class="row justify-content-center">
-                            <div class="col-lg col-md-2 col-sm-10 check">
-                                <div class="form-group">
-                                    <input type="date-in" class="form-control check-form from" placeholder="Check-In">
-                                    <span class="icon">
+                            <form action="">
+                                <div class="col-lg col-md-2 col-sm-10 check">
+                                    <div class="form-group">
+                                        <input type="date-in" name="check-in" class="form-control check-form from" placeholder="Check-In">
+                                        <span class="icon">
 <i class="fas fa-calendar"></i>
 </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg col-md-2 col-sm-10 check">
-                                <div class="form-group">
-                                    <input type="date-out" class="form-control check-form to" placeholder="Check-In">
-                                    <span class="icon">
+                                <div class="col-lg col-md-2 col-sm-10 check">
+                                    <div class="form-group">
+                                        <input type="date-out" name="check-out" class="form-control check-form to" placeholder="Check-In">
+                                        <span class="icon">
 <i class="fas fa-calendar"></i>
 </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg col-md-2 col-sm-10 check">
-                                <div class="form-group">
-                                    <select class="form-control check-form ">
+                                <div class="col-lg col-md-2 col-sm-10 check">
+                                    <div class="form-group">
+                                        <select class="form-control check-form ">
 <option value="">Room</option>
 <option value="1">Dulex</option>
 <option value="2">Simple</option>
 <option value="3">Luxury</option> 
 </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg col-md-2 col-sm-10 check">
-                                <div class="form-group">
-                                    <select class="form-control check-form">
+                                <div class="col-lg col-md-2 col-sm-10 check">
+                                    <div class="form-group">
+                                        <select class="form-control check-form">
                                       <option value="">Guest</option>
 <option value="1">01</option>
 <option value="2">02</option>
@@ -110,11 +111,12 @@
 <option value="4">04</option>
 <option value="5">05</option>
 </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg col-md-2 col-sm-10 check">
-                                <button type="button" class="btn btn-success w-100">Check Availability</button>
-                            </div>
+                                <div class="col-lg col-md-2 col-sm-10 check">
+                                    <button type="submit" class="btn btn-success w-100">Check Availability</button>
+                                </div>
+                            </form>
                         </div>
                     </form>
                 </div>
