@@ -574,7 +574,22 @@
                 animateOut: 'slideOutUp',
                 animateIn: 'slideInUp',
             })
-
+            $('.count').counterUp({
+                delay: 10,
+                time: 1000
+            });
+            $.scrollUp({
+                scrollDistance: 300,
+                scrollFrom: 'top',
+                padding: 0,
+                scrollSpeed: 1600,
+                easingType: 'linear',
+                onScrollEnd: false,
+                scrollImg: true,
+            });
+            $(window).scroll(function() { // check if scroll event happened
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 700)
+            });
             $('.from').datepicker({
                 language: 'en',
                 dateFormat: 'dd - M - yyyy',
@@ -594,23 +609,6 @@
                 todayButton: new Date(),
                 clearButton: true,
                 autoClose: true,
-            });
-
-            $('.count').counterUp({
-                delay: 10,
-                time: 1000
-            });
-            $.scrollUp({
-                scrollDistance: 300,
-                scrollFrom: 'top',
-                padding: 0,
-                scrollSpeed: 1600,
-                easingType: 'linear',
-                onScrollEnd: false,
-                scrollImg: true,
-            });
-            $(window).scroll(function() { // check if scroll event happened
-                $('nav').toggleClass('scrolled', $(this).scrollTop() > 700)
             });
         });
     </script>
