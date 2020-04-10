@@ -795,15 +795,6 @@ option:hover {
     .slider-second {
         font-size: 31px;
     }
-    #wrapper {
-        height: 100vh;
-    }
-    #slider {
-        height: 100vh;
-    }
-    #slider .owl-item div {
-        height: 100vh;
-    }
     .available {
         position: inherit;
         background-color: var(--black-color);
